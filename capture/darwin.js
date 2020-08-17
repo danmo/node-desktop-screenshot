@@ -36,6 +36,7 @@ module.exports = function(options, callback) {
 	function capture(output, callback) {
 		var cmd = "screencapture";
 		var args = [
+			"-i",
 			// will create PNG by default
 			"-t",
 			path.extname(output).toLowerCase().substring(1),
